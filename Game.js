@@ -11,11 +11,11 @@ function Game()
 Game.prototype.test = function()
 {
 	console.log("test");
-
+	//unessecary console logs
 	//console.log(e.keyCode);
 }
 
-Game.prototype.keyInputDown = function(e)
+Game.prototype.keyInputDown = function(e) // e?? poor name choice
 {
 	
 	if(e.keyCode == 87)
@@ -30,9 +30,9 @@ Game.prototype.keyInputDown = function(e)
 
 Game.prototype.gameLoop = function()
 {
-	console.log(this);
+	console.log(this); // nice logs bro
 	player.update();
-	//this.keyInputDown();
+	//this.keyInputDown(); // why is this commented? 
 	window.requestAnimationFrame(game.gameLoop);
 	//player.moveRight();
 	draw();
